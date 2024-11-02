@@ -146,7 +146,7 @@ section {
     text-align:center;
 }
 
-.scolarité, .carrière {
+.scolarité, .carrière, .loisirs, .compétences{
     background-color: black;
     justify-content: center;
     text-align: center;
@@ -163,7 +163,7 @@ section {
     text-align: center;
 }
 
-.compétences-boite {
+.compétences-boite, .loisirs-boite {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -193,7 +193,7 @@ h3 {
     margin-top:1.5rem;
 }
 
-.compétences-boite img {
+.compétences-boite img, .loisirs-boite img{
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
@@ -202,13 +202,20 @@ h3 {
     background-color: white;
 }
 
-.boite {
+.boite-compétence {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
-.compétences-contenu {
+.boite-loisirs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+
+.compétences-contenu, .loisirs-contenu {
     min-height: 34.375rem;
     max-width: 28.125rem;
     background: black;
